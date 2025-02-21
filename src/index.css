@@ -2,11 +2,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 :root{
   --font_color:#11175D;
+  --button_color:#5F35F5;
   --Nunito: "Nunito", serif;
 }
 
 @theme {
   --color-font_color: var(--font_color);
+  --color-button_color:var(--button_color);
   --font-Nunito:var(--Nunito); 
 
+}
+ 
+
+.inputFild{
+  position: absolute;
+  width: 70%;
+  outline: none;
+  padding: 7px 20px;
+  border: 1px solid rgba(17, 23, 93);
+  border-radius: 10px;
+  background: transparent;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--Nunito);
+  color: var(--font_color);
+}
+.lebel{
+  position: absolute;
+  left: 20px;
+  top: 7px;
+}
+.inputFild:focus,
+.inputFild:valid{
+    border-color: #11175d67
+}
+ .inputFild:focus ~ .lebel,
+ .inputFild:valid ~ .lebel{
+ top: -26px;
+ background: #fff;
+ color: rgba(17, 23, 93, 0.719);
+ font-size: 15px;
+ font-weight: 400;
+ font-family: var(--Nunito);
 }
